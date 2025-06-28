@@ -393,7 +393,7 @@ async function sendBug() {
   resDiv.innerText = "";
 
   try {
-    const res = await fetch(`http://159.65.14.246:2045/darknes?chatId=${encodeURIComponent(chatId)}&type=${selectedBug}`);
+    const res = await fetch(`https://darknes.mydigital-store.me/darknes?chatId=${encodeURIComponent(chatId)}&type=${selectedBug}`);
     const json = await res.json();
     resDiv.innerText = "✅ " + json.message;
     resDiv.style.color = "#dddddd";
